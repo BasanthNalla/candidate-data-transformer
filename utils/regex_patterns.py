@@ -1,0 +1,12 @@
+EMAIL_REGEX = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
+PHONE_REGEX = r"(?:\+91[-.\s]?)?(?:0)?[6-9]\d{9}"
+LINKEDIN_REGEX = r"https?://(?:www\.)?linkedin\.com/in/[A-Za-z0-9_-]+/?"
+GITHUB_REGEX = r"https?://(?:www\.)?github\.com/[A-Za-z0-9_-]+/?"
+URL_REGEX = r"https?://[^\s]+"
+SKILLS_SECTION_REGEX = (
+    r"(?is)"
+    r"(?:technical\s+skills|skills|core\s+skills|technologies|technical\s+proficiencies)"
+    r"\s*:?\s*"
+    r"(.*?)"
+    r"(?=\n[A-Z][A-Za-z ]{2,}:?\n|\Z)"
+)

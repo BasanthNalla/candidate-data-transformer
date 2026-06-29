@@ -1,6 +1,5 @@
-from parsers.csv_parser import CSVParser
+from parsers.resume_parser import ResumeParser
 
-parser = CSVParser("input/recruiter.csv")
-candidates = parser.parse()
-for candidate in candidates:
-    print(candidate.model_dump())
+parser = ResumeParser("input/resume.pdf")
+candidate = parser.parse()
+print(candidate.model_dump())

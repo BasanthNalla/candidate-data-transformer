@@ -1,0 +1,42 @@
+Python
+Java
+C
+C++
+C#
+JavaScript
+TypeScript
+Go
+Rust
+SQL
+MySQL
+PostgreSQL
+MongoDB
+Oracle
+Redis
+React
+Angular
+Vue
+Node.js
+Express
+Django
+Flask
+Spring Boot
+Docker
+Kubernetes
+AWS
+Azure
+GCP
+Git
+HTML
+CSS
+Bootstrap
+Tailwind CSS
+TensorFlow
+PyTorch
+Machine Learning
+Deep Learning
+NumPy
+Pandas
+OpenCV
+Scikit-learn
+Linux
