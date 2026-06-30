@@ -3,6 +3,8 @@ from models.candidate import Candidate
 from models.skill import Skill
 from models.location import Location
 from models.link import Link
+from models.experience import Experience
+from models.education import Education
 
 class CSVParser:
     CSV_SOURCE = "Recruiter CSV"
@@ -29,8 +31,8 @@ class CSVParser:
             headline = self._get_value(row, "headline"),
             years_experience = self._parse_years(self._get_value(row, "years_experience")),
             skills = self._parse_skills(self._get_value(row, "skills")),
-            experience = [],
-            education = [],
+            experience = self._parse_experience(row),
+            education = self._parse_education(row),
             provenance = [],
             overall_confidence = self.CSV_SKILL_CONFIDENCE
         )
@@ -84,3 +86,26 @@ class CSVParser:
             return None
         return str(value).strip()
     
+    def _parse_experience(self, row) -> list[Experience]:
+        company = self._get_value(row, "company")
+        title = self._get_value(row, "title")
+        if not company and not title:
+            return []
+        return [Experience(
+            company=company or "",
+            title=title or "",
+            start=self._get_value(row, "start"),
+            end=self._get_value(row, "end"),
+            summary=self._get_value(row, "summary") or None
+        )]
+    
+    def _parse_education(self, row) -> list[Education]:
+        institution = self._get_value(row, "institution")
+        if not institution:
+            return []
+        return [Education(
+            institution=institution,
+            degree=self._get_value(row, "degree"),
+            field=self._get_value(row, "field"),
+            end_year=self._get_value(row, "end_year")
+        )]

@@ -10,3 +10,11 @@ SKILLS_SECTION_REGEX = (
     r"(.*?)"
     r"(?=\n[A-Z][A-Za-z ]{2,}:?\n|\Z)"
 )
+DATE_REGEX = (
+    r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+    r"[a-z]*\s+\d{4}"
+    r"|"
+    r"\d{4}"
+    r"|"
+    r"Present"
+)

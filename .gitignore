@@ -1,2 +1,5 @@
 env/
 
+models/_pycache__/
+parsers/_pycache__/
+utils/_pycache__/

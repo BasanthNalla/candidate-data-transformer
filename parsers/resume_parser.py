@@ -7,6 +7,9 @@ from models.location import Location
 from models.link import Link
 from utils.regex_patterns import *
 from utils.skill_loader import SkillLoader
+from utils.section_headers import SECTION_HEADERS
+from models.education import Education
+from models.experience import Experience
 
 class ResumeParser:
     RESUME_SOURCE = "Resume"
@@ -19,7 +22,8 @@ class ResumeParser:
     
     def parse(self) -> Candidate:
         text = self._extract_text()
-        return self._parse_candidate(text)
+        sections = self._extract_sections(text)
+        return self._parse_candidate(text, sections)
     
     def _extract_text(self) -> str:
         text = ""
@@ -31,7 +35,7 @@ class ResumeParser:
 
         return text
     
-    def _parse_candidate(self, text: str) -> Candidate:
+    def _parse_candidate(self, text, sections) -> Candidate:
         return Candidate(
             candidate_id="",
             full_name=self._extract_name(text),
@@ -41,9 +45,15 @@ class ResumeParser:
             links=self._extract_links(text),
             headline=self._extract_headline(text),
             years_experience=None,
-            skills=self._extract_skills(text),
-            experience=[],
-            education=[],
+            skills=self._extract_skills(
+                sections.get("skills", "")
+            ),
+            experience=self._extract_experience(
+                sections.get("experience", "")
+            ),
+            education=self._extract_education(
+                sections.get("education", "")
+            ),
             provenance=[],
             overall_confidence=0.95
         )
@@ -114,3 +124,89 @@ class ResumeParser:
                 )
             )
         return skills
+    
+    def _extract_sections(self, text: str) -> dict:
+        sections = {}
+        lines = [line.strip() for line in text.split("\n")]
+        current_section = None
+        for line in lines:
+            lower = line.lower()
+            found = False
+            for section_name, headers in SECTION_HEADERS.items():
+                if lower in headers:
+                    current_section = section_name
+                    sections[current_section] = []
+                    found = True
+                    break
+            if found:
+                continue
+            if current_section:
+                sections[current_section].append(line)
+        return {
+            key: "\n".join(value)
+            for key, value in sections.items()
+        }
+    
+    def _extract_education(self, education_text: str) -> list[Education]:
+        if not education_text.strip():
+            return []
+        lines = [
+            line.strip()
+            for line in education_text.split("\n")
+            if line.strip()
+        ]
+        institution = ""
+        degree = ""
+        field = None
+        end_year = None
+        if len(lines) >= 1:
+            institution = lines[0]
+        if len(lines) >= 2:
+            degree = lines[1]
+        if len(lines) >= 3:
+            field = lines[2]
+        dates = re.findall(DATE_REGEX, education_text)
+        if len(dates)>=2:
+            end_year = dates[1]
+        return [
+            Education(
+                institution=institution,
+                degree=degree,
+                field=field,
+                end_year=end_year
+            )
+        ]
+    
+    def _extract_experience(self, experience_text: str) -> list[Experience]:
+        if not experience_text.strip():
+            return []
+        lines = [
+            line.strip()
+            for line in experience_text.split("\n")
+            if line.strip()
+        ]
+        company = ""
+        title = ""
+        start = None
+        end = None
+        summary = None
+        if len(lines) >= 1:
+            company = lines[0]
+        if len(lines) >= 2:
+            title = lines[1]
+        dates = re.findall(DATE_REGEX, experience_text)
+        if len(dates) >= 1:
+            start = dates[0]
+        if len(dates) >= 2:
+            end = dates[1]
+        if len(lines) >= 4:
+            summary = " ".join(lines[3:])
+        return [
+            Experience(
+                company=company,
+                title=title,
+                start=start,
+                end=end,
+                summary=summary
+            )
+        ]
