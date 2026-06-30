@@ -1,0 +1,1487 @@
+[
+    {
+        "candidate_id": "1",
+        "full_name": "John Smith",
+        "emails": [
+            "john.smith@gmail.com"
+        ],
+        "phones": [
+            "+919876543210"
+        ],
+        "location": {
+            "city": "Hyderabad",
+            "region": "Telangana",
+            "country": "IN"
+        },
+        "links": {
+            "linkedin": "https://linkedin.com/in/johnsmith",
+            "github": "https://github.com/johnsmith",
+            "portfolio": "https://johnsmith.dev",
+            "other": []
+        },
+        "headline": "Software Engineer",
+        "years_experience": 3.0,
+        "skills": [
+            {
+                "name": "Python",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "Java",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "SQL",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "Docker",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            }
+        ],
+        "experience": [
+            {
+                "company": "Google",
+                "title": "Software Engineer",
+                "start": "2022-01",
+                "end": "Present",
+                "summary": "Working on scalable backend APIs and cloud infrastructure."
+            }
+        ],
+        "education": [
+            {
+                "institution": "IIITDM Jabalpur",
+                "degree": "B.Tech",
+                "field": "Computer Science and Engineering",
+                "end_year": 2022
+            }
+        ],
+        "overall_confidence": 0.94,
+        "provenance": [
+            {
+                "field": "skills.Python",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Java",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.SQL",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Docker",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "email",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "phone",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "linkedin",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "github",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "portfolio",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "experience.Google",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "education.IIITDM Jabalpur",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "city",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "region",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "country",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "headline",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "years_experience",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "candidate_id",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            }
+        ]
+    },
+    {
+        "candidate_id": "2",
+        "full_name": "Alice Walker",
+        "emails": null,
+        "phones": [
+            "+919988776655"
+        ],
+        "location": {
+            "city": "Delhi",
+            "region": "Delhi",
+            "country": "IN"
+        },
+        "links": {
+            "linkedin": null,
+            "github": null,
+            "portfolio": null,
+            "other": []
+        },
+        "headline": "Data Analyst",
+        "years_experience": null,
+        "skills": null,
+        "experience": null,
+        "education": [
+            {
+                "institution": "Delhi University",
+                "degree": null,
+                "field": null,
+                "end_year": null
+            }
+        ],
+        "overall_confidence": 0.27,
+        "provenance": [
+            {
+                "field": "phone",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "education.Delhi University",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "city",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "region",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "country",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "headline",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "candidate_id",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            }
+        ]
+    },
+    {
+        "candidate_id": "3",
+        "full_name": "Jane Doe",
+        "emails": [
+            "jane.doe@gmail.com"
+        ],
+        "phones": [
+            "+918765432109"
+        ],
+        "location": {
+            "city": "Bangalore",
+            "region": "Karnataka",
+            "country": "IN"
+        },
+        "links": {
+            "linkedin": "https://linkedin.com/in/janedoe",
+            "github": "https://github.com/janedoe",
+            "portfolio": null,
+            "other": []
+        },
+        "headline": "Backend Developer",
+        "years_experience": 5.0,
+        "skills": [
+            {
+                "name": "Python",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "Django",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "PostgreSQL",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "AWS",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            }
+        ],
+        "experience": [
+            {
+                "company": "Microsoft",
+                "title": "Backend Developer",
+                "start": "2020-03",
+                "end": "Present",
+                "summary": "Developing REST APIs and microservices."
+            }
+        ],
+        "education": [
+            {
+                "institution": "NIT Warangal",
+                "degree": "M.Tech",
+                "field": "Computer Science",
+                "end_year": 2020
+            }
+        ],
+        "overall_confidence": 0.92,
+        "provenance": [
+            {
+                "field": "skills.Python",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Django",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.PostgreSQL",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.AWS",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "email",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "phone",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "linkedin",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "github",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "experience.Microsoft",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "education.NIT Warangal",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "city",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "region",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "country",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "headline",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "years_experience",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "candidate_id",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            }
+        ]
+    },
+    {
+        "candidate_id": "4",
+        "full_name": "Rahul Sharma",
+        "emails": [
+            "rahul.sharma@gmail.com"
+        ],
+        "phones": [
+            "+917654321098"
+        ],
+        "location": {
+            "city": "Pune",
+            "region": "Maharashtra",
+            "country": "IN"
+        },
+        "links": {
+            "linkedin": "https://linkedin.com/in/rahulsharma",
+            "github": null,
+            "portfolio": "https://rahul.dev",
+            "other": []
+        },
+        "headline": "Data Engineer",
+        "years_experience": 4.0,
+        "skills": [
+            {
+                "name": "Python",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "Spark",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "Hadoop",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "SQL",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            }
+        ],
+        "experience": [
+            {
+                "company": "Amazon",
+                "title": "Data Engineer",
+                "start": "2021-06",
+                "end": "Present",
+                "summary": "Building large-scale ETL pipelines."
+            }
+        ],
+        "education": [
+            {
+                "institution": "IIT Hyderabad",
+                "degree": "B.Tech",
+                "field": "Electrical Engineering",
+                "end_year": 2021
+            }
+        ],
+        "overall_confidence": 0.92,
+        "provenance": [
+            {
+                "field": "skills.Python",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Spark",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Hadoop",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.SQL",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "email",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "phone",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "linkedin",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "portfolio",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "experience.Amazon",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "education.IIT Hyderabad",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "city",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "region",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "country",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "headline",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "years_experience",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "candidate_id",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            }
+        ]
+    },
+    {
+        "candidate_id": "5",
+        "full_name": "Priya Reddy",
+        "emails": [
+            "priya.reddy@gmail.com"
+        ],
+        "phones": [
+            "+916543210987"
+        ],
+        "location": {
+            "city": "Chennai",
+            "region": "Tamil Nadu",
+            "country": "IN"
+        },
+        "links": {
+            "linkedin": null,
+            "github": "https://github.com/priyareddy",
+            "portfolio": null,
+            "other": []
+        },
+        "headline": "Machine Learning Engineer",
+        "years_experience": 2.0,
+        "skills": [
+            {
+                "name": "Python",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "TensorFlow",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "PyTorch",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "Opencv",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            }
+        ],
+        "experience": [
+            {
+                "company": "TCS",
+                "title": "Machine Learning Engineer",
+                "start": "2023-07",
+                "end": "Present",
+                "summary": "Developing computer vision models."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Anna University",
+                "degree": "B.E",
+                "field": "Electronics and Communication Engineering",
+                "end_year": 2023
+            }
+        ],
+        "overall_confidence": 0.88,
+        "provenance": [
+            {
+                "field": "skills.Python",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.TensorFlow",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.PyTorch",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Opencv",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "email",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "phone",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "github",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "experience.TCS",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "education.Anna University",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "city",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "region",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "country",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "headline",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "years_experience",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "candidate_id",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            }
+        ]
+    },
+    {
+        "candidate_id": "6",
+        "full_name": "Bob Martin",
+        "emails": [
+            "bob@gmail.com"
+        ],
+        "phones": null,
+        "location": {
+            "city": "Mumbai",
+            "region": "Maharashtra",
+            "country": "IN"
+        },
+        "links": {
+            "linkedin": "https://linkedin.com/in/bob",
+            "github": null,
+            "portfolio": null,
+            "other": []
+        },
+        "headline": null,
+        "years_experience": 1.0,
+        "skills": [
+            {
+                "name": "Python",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            }
+        ],
+        "experience": null,
+        "education": null,
+        "overall_confidence": 0.46,
+        "provenance": [
+            {
+                "field": "skills.Python",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "email",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "linkedin",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "city",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "region",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "country",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "years_experience",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "candidate_id",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            }
+        ]
+    },
+    {
+        "candidate_id": "7",
+        "full_name": "Charlie Brown",
+        "emails": [
+            "charlie@gmail.com"
+        ],
+        "phones": [
+            "+919123456789"
+        ],
+        "location": {
+            "city": null,
+            "region": null,
+            "country": null
+        },
+        "links": {
+            "linkedin": null,
+            "github": null,
+            "portfolio": null,
+            "other": []
+        },
+        "headline": null,
+        "years_experience": 0.0,
+        "skills": [
+            {
+                "name": "Java",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            },
+            {
+                "name": "Spring Boot",
+                "confidence": 0.9,
+                "sources": [
+                    "Recruiter CSV"
+                ]
+            }
+        ],
+        "experience": [
+            {
+                "company": "Infosys",
+                "title": "Software Engineer",
+                "start": null,
+                "end": null,
+                "summary": null
+            }
+        ],
+        "education": null,
+        "overall_confidence": 0.66,
+        "provenance": [
+            {
+                "field": "skills.Java",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Spring Boot",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "email",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "phone",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "experience.Infosys",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "years_experience",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            },
+            {
+                "field": "candidate_id",
+                "source": "Recruiter CSV",
+                "method": "Parsed"
+            }
+        ]
+    },
+    {
+        "candidate_id": "gen-bee9869f",
+        "full_name": "BASANTH NALLA",
+        "emails": [
+            "basanthnalla987@gmail.com"
+        ],
+        "phones": [
+            "+919392414683"
+        ],
+        "location": {
+            "city": "Information Technology",
+            "region": "Design",
+            "country": "IN"
+        },
+        "links": {
+            "linkedin": "https://www.linkedin.com/in/basanth-nalla-a81086278",
+            "github": "https://github.com/BasanthNalla",
+            "portfolio": "https://leetcode.com/u/Basanth",
+            "other": []
+        },
+        "headline": "PDPM Indian Institute of Information Technology, Design and Manufacturing, Jabalpur Aug",
+        "years_experience": null,
+        "skills": [
+            {
+                "name": "Programming Languages: Python",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "C",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "C++",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "SQL",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Backend Development: Django Rest Framework",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Node.js",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Rest Apis",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Jwt Authentication",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Role-",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Based Access Control",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Api Design",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Frontend Development: React.Js",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Html5",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Css3",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Artificial Intelligence",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Llm Technologies: Langchain",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Rag",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Pinecone",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Sentence Transformers",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Prompt Engineering",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Vector Databases",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Large Language Models",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Databases: Postgresql",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "MySQL",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Sqlite",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "MongoDB",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Query Optimization",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Data Analysis: Pandas",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Numpy",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Scikit-learn",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Matplotlib",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Seaborn",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Excel",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Jupyter Notebook",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Statistical",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Analysis",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Tools & Platforms: Git",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Github",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Github Actions",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "Aws (Ec2",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            },
+            {
+                "name": "S3 - Exposure)",
+                "confidence": 0.9,
+                "sources": [
+                    "Resume"
+                ]
+            }
+        ],
+        "experience": null,
+        "education": [
+            {
+                "institution": "PDPM Indian Institute of Information Technology, Design and Manufacturing, Jabalpur Aug",
+                "degree": null,
+                "field": null,
+                "end_year": 2023
+            },
+            {
+                "institution": "Bachelor of Technology (B.Tech), Computer Science and Engineering",
+                "degree": "Relevant Coursework: Data Structures & Algorithms, DBMS, Object-Oriented Programming, Computer Net-",
+                "field": "works, Operating Systems, Computer Architecture, Operations Research, Data Science",
+                "end_year": null
+            }
+        ],
+        "overall_confidence": 0.74,
+        "provenance": [
+            {
+                "field": "skills.Programming Languages: Python",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.JavaScript",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.C",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.C++",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.SQL",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Backend Development: Django Rest Framework",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Node.js",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Rest Apis",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Jwt Authentication",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Role-",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Based Access Control",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Api Design",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Frontend Development: React.Js",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Html5",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Css3",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Artificial Intelligence",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Llm Technologies: Langchain",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Rag",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Pinecone",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Sentence Transformers",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Prompt Engineering",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Vector Databases",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Large Language Models",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Databases: Postgresql",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.MySQL",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Sqlite",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.MongoDB",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Query Optimization",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Data Analysis: Pandas",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Numpy",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Scikit-learn",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Matplotlib",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Seaborn",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Excel",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Jupyter Notebook",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Statistical",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Analysis",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Tools & Platforms: Git",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Github",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Github Actions",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.Aws (Ec2",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "skills.S3 - Exposure)",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "email",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "phone",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "linkedin",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "github",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "portfolio",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "education.PDPM Indian Institute of Information Technology, Design and Manufacturing, Jabalpur Aug",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "education.Bachelor of Technology (B.Tech), Computer Science and Engineering",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "city",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "region",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "country",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "full_name",
+                "source": "Resume",
+                "method": "Parsed"
+            },
+            {
+                "field": "headline",
+                "source": "Resume",
+                "method": "Parsed"
+            }
+        ]
+    }
+]

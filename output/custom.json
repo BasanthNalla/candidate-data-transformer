@@ -1,0 +1,126 @@
+[
+    {
+        "full_name": "John Smith",
+        "primary_email": "john.smith@gmail.com",
+        "phone": "+919876543210",
+        "skills": [
+            "Python",
+            "Java",
+            "SQL",
+            "Docker"
+        ],
+        "overall_confidence": 0.94
+    },
+    {
+        "full_name": "Alice Walker",
+        "primary_email": null,
+        "phone": "+919988776655",
+        "skills": null,
+        "overall_confidence": 0.27
+    },
+    {
+        "full_name": "Jane Doe",
+        "primary_email": "jane.doe@gmail.com",
+        "phone": "+918765432109",
+        "skills": [
+            "Python",
+            "Django",
+            "PostgreSQL",
+            "AWS"
+        ],
+        "overall_confidence": 0.92
+    },
+    {
+        "full_name": "Rahul Sharma",
+        "primary_email": "rahul.sharma@gmail.com",
+        "phone": "+917654321098",
+        "skills": [
+            "Python",
+            "Spark",
+            "Hadoop",
+            "SQL"
+        ],
+        "overall_confidence": 0.92
+    },
+    {
+        "full_name": "Priya Reddy",
+        "primary_email": "priya.reddy@gmail.com",
+        "phone": "+916543210987",
+        "skills": [
+            "Python",
+            "TensorFlow",
+            "PyTorch",
+            "Opencv"
+        ],
+        "overall_confidence": 0.88
+    },
+    {
+        "full_name": "Bob Martin",
+        "primary_email": "bob@gmail.com",
+        "phone": null,
+        "skills": [
+            "Python"
+        ],
+        "overall_confidence": 0.46
+    },
+    {
+        "full_name": "Charlie Brown",
+        "primary_email": "charlie@gmail.com",
+        "phone": "+919123456789",
+        "skills": [
+            "Java",
+            "Spring Boot"
+        ],
+        "overall_confidence": 0.66
+    },
+    {
+        "full_name": "BASANTH NALLA",
+        "primary_email": "basanthnalla987@gmail.com",
+        "phone": "+919392414683",
+        "skills": [
+            "Programming Languages: Python",
+            "JavaScript",
+            "C",
+            "C++",
+            "SQL",
+            "Backend Development: Django Rest Framework",
+            "Node.js",
+            "Rest Apis",
+            "Jwt Authentication",
+            "Role-",
+            "Based Access Control",
+            "Api Design",
+            "Frontend Development: React.Js",
+            "Html5",
+            "Css3",
+            "Artificial Intelligence",
+            "Llm Technologies: Langchain",
+            "Rag",
+            "Pinecone",
+            "Sentence Transformers",
+            "Prompt Engineering",
+            "Vector Databases",
+            "Large Language Models",
+            "Databases: Postgresql",
+            "MySQL",
+            "Sqlite",
+            "MongoDB",
+            "Query Optimization",
+            "Data Analysis: Pandas",
+            "Numpy",
+            "Scikit-learn",
+            "Matplotlib",
+            "Seaborn",
+            "Excel",
+            "Jupyter Notebook",
+            "Statistical",
+            "Analysis",
+            "Tools & Platforms: Git",
+            "Github",
+            "Github Actions",
+            "Aws (Ec2",
+            "S3 - Exposure)"
+        ],
+        "overall_confidence": 0.74
+    }
+]
