@@ -1,18 +1,8 @@
 class FieldResolver:
     def resolve(self, candidate, path: str):
-        """
-        Resolves a dot-notation or array path against a Candidate object.
-        Returns (value, bool) where bool is True if found.
-        Examples:
-        - "full_name"
-        - "emails[0]"
-        - "skills[].name"
-        - "location.city"
-        """
         if not path:
             return None, False
 
-        # Array wildcard handling e.g. "skills[].name"
         if "[]." in path:
             array_part, rest = path.split("[].", 1)
             array_val, found = self._resolve_simple(candidate, array_part)
@@ -34,7 +24,6 @@ class FieldResolver:
             if current is None:
                 return None, False
             
-            # Array index handling e.g. "emails[0]"
             if "[" in part and part.endswith("]"):
                 attr_name = part[:part.index("[")]
                 idx_str = part[part.index("[")+1:-1]

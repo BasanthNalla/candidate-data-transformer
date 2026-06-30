@@ -3,7 +3,6 @@ from copy import deepcopy
 class CandidateMerger:
     def __init__(self, sources):
         """sources is a list of tuples: (source_name, candidate)"""
-        # Filter out None candidates
         self.sources = [(name, cand) for name, cand in sources if cand is not None]
 
     def _merge_unique(self, key_func, extract_list_func):
@@ -32,7 +31,6 @@ class CandidateMerger:
         if not self.sources:
             return None
             
-        # Initialize with a base candidate
         merged = deepcopy(self.sources[0][1])
         
         merged.candidate_id = self._pick(lambda c: c.candidate_id)

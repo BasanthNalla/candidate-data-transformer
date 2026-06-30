@@ -23,11 +23,9 @@ def match_and_merge(csv_cands, resume_cand):
         sources = [("Recruiter CSV", c)]
         is_match = False
         if resume_cand and not resume_matched:
-            # Match by email
             c_emails = set(c.emails)
             if resume_emails.intersection(c_emails):
                 is_match = True
-            # Match by name
             elif c.full_name and resume_cand.full_name and c.full_name.lower() == resume_cand.full_name.lower():
                 is_match = True
                 
@@ -55,7 +53,6 @@ def main():
         print("Error: Provide at least one source (--csv or --resume)")
         sys.exit(1)
         
-    # Load config
     try:
         config_loader = ConfigLoader()
         config = config_loader.load(args.config)
@@ -63,7 +60,6 @@ def main():
         print(f"Config error: {e}")
         sys.exit(1)
         
-    # Parse sources
     csv_candidates = []
     if args.csv:
         try:

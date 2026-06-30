@@ -16,7 +16,6 @@ class Projector:
             
             value, found = self.resolver.resolve(candidate, source_path)
             
-            # Handle Pydantic model serialization if we extracted whole objects
             if hasattr(value, "model_dump"):
                 value = value.model_dump()
             elif isinstance(value, list):
@@ -27,7 +26,7 @@ class Projector:
                     continue
                 elif on_missing == "error":
                     raise ValueError(f"Required field missing: {source_path}")
-                else: # "null"
+                else:
                     value = None
             else:
                 normalize_type = field.get("normalize")

@@ -28,7 +28,6 @@ def test_john_smith_gold_profile():
     
     assert merged.full_name == "John Smith"
     assert merged.emails == ["john.smith@gmail.com"]
-    # E.164 phone bug regression test
     assert merged.phones == ["+919876543210"]
     assert merged.location.city == "Hyderabad"
     assert merged.location.country == "IN"

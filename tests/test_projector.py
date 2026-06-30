@@ -15,19 +15,15 @@ def test_field_resolver():
     
     resolver = FieldResolver()
     
-    # Simple path
     val, found = resolver.resolve(cand, "full_name")
     assert found and val == "Test User"
     
-    # Array index
     val, found = resolver.resolve(cand, "emails[0]")
     assert found and val == "test@example.com"
     
-    # Array wildcard
     val, found = resolver.resolve(cand, "skills[].name")
     assert found and val == ["Python"]
     
-    # Missing path
     val, found = resolver.resolve(cand, "missing_field")
     assert not found
 
