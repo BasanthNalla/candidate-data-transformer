@@ -1,10 +1,11 @@
+black>=24.4.0
+dateparser
+isort>=5.13.0
 pandas>=2.2.0
 pdfplumber>=0.11.0
-python-docx>=1.1.0
 phonenumbers>=8.13.0
-python-dateutil>=2.9.0
+pycountry>=23.12.11
 pydantic>=2.7.0
 pytest>=8.2.0
-black>=24.4.0
-isort>=5.13.0
-dateparser
+python-dateutil>=2.9.0
+python-docx>=1.1.0

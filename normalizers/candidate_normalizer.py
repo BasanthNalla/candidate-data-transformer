@@ -12,16 +12,18 @@ class CandidateNormalizer:
         candidate.emails = [
             normalize_email(email) for email in candidate.emails
         ]
-        candidate.phones = [
-            normalize_phone(phone) for phone in candidate.phones
-        ]
+        
+        normalized_phones = [normalize_phone(phone) for phone in candidate.phones]
+        candidate.phones = [p for p in normalized_phones if p is not None]
+        
         candidate.location = normalize_location(candidate.location)
         candidate.links = normalize_link(candidate.links)
+        
         for skill in candidate.skills:
             skill.name = normalize_skill(skill.name)
-        for education in candidate.education:
-            education.end_year = normalize_date(education.end_year)
+            
         for experience in candidate.experience:
             experience.start = normalize_date(experience.start)
             experience.end = normalize_date(experience.end)
+            
         return candidate

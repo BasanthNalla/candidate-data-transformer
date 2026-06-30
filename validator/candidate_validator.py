@@ -121,17 +121,14 @@ class CandidateValidator:
         return True
     
     def _validate_provenance(self, candidate):
-        valid_sources = {"Resume", "Recruiter CSV"}
-        valid_methods = {"Matched", "Parsed"}
+        valid_methods = {"Matched", "Parsed", "Extracted", "Inferred"}
         for provenance in candidate.provenance:
             if not provenance.field or not provenance.field.strip():
                 raise ValueError("Provenance field cannot be empty")
             if not provenance.value or not str(provenance.value).strip():
                 raise ValueError("Provenance value cannot be empty")
-            if provenance.source not in valid_sources:
-                raise ValueError(
-                    f"Invalid provenance source: {provenance.source}"
-                )
+            if not provenance.source or not provenance.source.strip():
+                raise ValueError("Provenance source cannot be empty")
             if provenance.method not in valid_methods:
                 raise ValueError(
                     f"Invalid provenance method: {provenance.method}"

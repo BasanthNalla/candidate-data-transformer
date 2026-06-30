@@ -1,8 +1,10 @@
-env/
-
 merger/__pycache__/
 models/__pycache__/
 normalizers/__pycache__/
 parsers/__pycache__/
 utils/__pycache__/
 validator/__pycache__/
+tests/__pycache__/
+__pycache__
+
+env/

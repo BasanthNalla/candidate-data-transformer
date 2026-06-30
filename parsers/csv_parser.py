@@ -13,7 +13,7 @@ class CSVParser:
         self.csv_path = csv_path
 
     def parse(self) -> list[Candidate]:
-        df = pd.read_csv(self.csv_path)
+        df = pd.read_csv(self.csv_path, dtype=str)
         candidates = []
         for _, row in df.iterrows():
             candidate = self._parse_candidate(row)
@@ -34,7 +34,7 @@ class CSVParser:
             experience = self._parse_experience(row),
             education = self._parse_education(row),
             provenance = [],
-            overall_confidence = self.CSV_SKILL_CONFIDENCE
+            overall_confidence = 0.0
         )
 
     def _parse_skills(self, skills: str) -> list[Skill]:
@@ -54,7 +54,7 @@ class CSVParser:
             country=self._get_value(row, "country")
         )
 
-    def _parse_links(self, row) -> list[Link]:
+    def _parse_links(self, row) -> Link:
         return Link(
                 linkedin=self._get_value(row, "linkedin"),
                 github=self._get_value(row, "github"),
@@ -73,11 +73,11 @@ class CSVParser:
         return [phone.strip()]
     
     def _parse_years(self, years):
-        if pd.isna(years):
+        if not years:
             return None
         try:
-            return int(years)
-        except:
+            return float(years)
+        except ValueError:
             return None
         
     def _get_value(self, row, column):
@@ -107,5 +107,13 @@ class CSVParser:
             institution=institution,
             degree=self._get_value(row, "degree"),
             field=self._get_value(row, "field"),
-            end_year=self._get_value(row, "end_year")
+            end_year=self._parse_end_year(self._get_value(row, "end_year"))
         )]
+
+    def _parse_end_year(self, year_str: str):
+        if not year_str:
+            return None
+        try:
+            return int(float(year_str))
+        except ValueError:
+            return None

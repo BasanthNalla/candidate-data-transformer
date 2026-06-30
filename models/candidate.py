@@ -15,7 +15,7 @@ class Candidate(BaseModel):
     location: Location
     links: Link
     headline: Optional[str] = None
-    years_experience: Optional[int] = None
+    years_experience: Optional[float] = None
     skills: list[Skill] = Field(default_factory=list)
     experience: list[Experience] = Field(default_factory=list)
     education: list[Education] = Field(default_factory=list)
