@@ -8,6 +8,7 @@ from models.link import Link
 from utils.regex_patterns import *
 from utils.skill_loader import SkillLoader
 from utils.section_headers import SECTION_HEADERS
+from utils.date_utils import split_date_range
 from models.education import Education
 from models.experience import Experience
 
@@ -155,27 +156,35 @@ class ResumeParser:
             for line in education_text.split("\n")
             if line.strip()
         ]
-        institution = ""
-        degree = ""
-        field = None
-        end_year = None
-        if len(lines) >= 1:
-            institution = lines[0]
-        if len(lines) >= 2:
-            degree = lines[1]
-        if len(lines) >= 3:
-            field = lines[2]
-        dates = re.findall(DATE_REGEX, education_text)
-        if len(dates)>=2:
-            end_year = dates[1]
-        return [
-            Education(
-                institution=institution,
-                degree=degree,
-                field=field,
-                end_year=end_year
+        educations = []
+        i = 0
+        while i<len(lines):
+            institution = lines[i]
+            degree = None
+            field = None
+            end_year = None
+            if i+1<len(lines):
+                degree = lines[i+1]
+            if i+2<len(lines):
+                year_match = re.search(r"\b(19|20)\d{2}\b", lines[i+2])
+                if year_match:
+                    end_year = year_match.group()
+                else:
+                    field = lines[i+2]
+            if i+3<len(lines):
+                year_match = re.search(r"\b(19|20)\d{2}\b", lines[i+3])
+                if year_match:
+                    end_year = year_match.group()
+            educations.append(
+                Education(
+                    institution= institution,
+                    degree= degree,
+                    field= field,
+                    end_year= end_year
+                )
             )
-        ]
+            i += 4
+        return educations
     
     def _extract_experience(self, experience_text: str) -> list[Experience]:
         if not experience_text.strip():
@@ -185,28 +194,45 @@ class ResumeParser:
             for line in experience_text.split("\n")
             if line.strip()
         ]
-        company = ""
-        title = ""
-        start = None
-        end = None
-        summary = None
-        if len(lines) >= 1:
-            company = lines[0]
-        if len(lines) >= 2:
-            title = lines[1]
-        dates = re.findall(DATE_REGEX, experience_text)
-        if len(dates) >= 1:
-            start = dates[0]
-        if len(dates) >= 2:
-            end = dates[1]
-        if len(lines) >= 4:
-            summary = " ".join(lines[3:])
-        return [
-            Experience(
-                company=company,
-                title=title,
-                start=start,
-                end=end,
-                summary=summary
+        experiences = []
+        i = 0
+        while i<len(lines):
+            company = lines[i]
+            title = ""
+            start = None
+            end = None
+            summary = []
+            if i+1<len(lines):
+                title = lines[i+1]
+            i += 2
+            while i<len(lines):
+                line = lines[i]
+                if(
+                    "-" in line
+                    or "Present" in line
+                    or "Current" in line
+                    or "Ongoing" in line
+                    or "to" in line.lower()
+                ):
+                    start, end = split_date_range(line)
+                    i += 1
+                    continue
+                if(
+                    i+1<len(lines)
+                    and lines[i+1].lower() not in ["present", "current", "ongoing"]
+                    and len(summary) > 0
+                    and line.istitle()
+                ):
+                    break
+                summary.append(line)
+                i += 1
+            experiences.append(
+                Experience(
+                    company= company,
+                    title= title,
+                    start= start,
+                    end= end,
+                    summary=" ".join(summary) if summary else None,
+                )
             )
-        ]
+        return experiences

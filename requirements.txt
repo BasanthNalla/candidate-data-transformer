@@ -7,3 +7,4 @@ pydantic>=2.7.0
 pytest>=8.2.0
 black>=24.4.0
 isort>=5.13.0
+dateparser
